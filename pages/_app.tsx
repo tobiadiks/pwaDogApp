@@ -3,9 +3,10 @@ import {Analytics} from '@vercel/analytics/react'
 import '../asset/style.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
+  
 const AnyComponent = Component as any;
-  <>
+ return(
+ <>
   <Analytics/>
   <AnyComponent {...pageProps} />;
 
