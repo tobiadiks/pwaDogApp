@@ -4,9 +4,11 @@ import '../asset/style.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+const AnyComponent = Component as any;
   <>
-  <Component {...pageProps}/>
   <Analytics/>
+  <AnyComponent {...pageProps} />;
+
   </>
   )
 }
